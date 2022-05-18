@@ -1,0 +1,63 @@
+<div class="container">
+  <!-- Title -->
+  <h3 class="d-flex justify-content-center">
+    Angular WebApp with Dotnet API connected to a GoogleSheet
+  </h3>
+  <h5 class="d-flex justify-content-center">
+    Create and Read From A GoogleSheet
+  </h5>
+  <p class="d-flex justify-content-center">
+    The api endpoints for this app are hosted on Herouku using Docker, Links are
+    below:
+  </p>
+  <a
+    class="d-flex justify-content-center"
+    href="https://googlesheetapi-app.herokuapp.com/api/values"
+    >Employees list Api</a
+  >
+  <a
+    class="d-flex justify-content-center"
+    href="https://googlesheetapi-app.herokuapp.com/api/salary"
+    >Salaries list Api</a
+  >
+  <a
+    class="d-flex justify-content-center"
+    href="https://docs.google.com/spreadsheets/d/1YKEJ678okMFWSas5EOUskHrO5cCgAvKVK91yyLVl1nM/edit?usp=sharing"
+    >Googlesheet that stores the data</a
+  >
+
+  <!-- Bootstrap NavBar -->
+  <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+    <li class="nav-item me-2" role="presentation">
+      <button
+        class="nav-link border"
+        id="pills-home-tab"
+        data-bs-toggle="pill"
+        data-bs-target="#pills-home"
+        type="button"
+        role="tab"
+        aria-controls="pills-home"
+        aria-selected="true"
+        routerLink="employee"
+      >
+        Employee
+      </button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button
+        class="nav-link border"
+        id="pills-profile-tab"
+        data-bs-toggle="pill"
+        data-bs-target="#pills-profile"
+        type="button"
+        role="tab"
+        aria-controls="pills-profile"
+        aria-selected="false"
+        routerLink="salary"
+      >
+        Salary
+      </button>
+    </li>
+  </ul>
+  <router-outlet></router-outlet>
+</div>
